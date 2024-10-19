@@ -1,7 +1,6 @@
 # cinemapedia
 
-A new Flutter project.
-
+##Este proyecto implementar Riverpod como gestor de estado, capas como repository, data, abtracciones, etc.
 
 #DEV
 
