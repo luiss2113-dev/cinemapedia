@@ -36,7 +36,7 @@ jobs:
           java-version: "12.x"
       - uses: actions/flutter-action@v1
         with:
-        channel: "stable"
+          channel: "stable"
       - name: instalar depedencias
         run: flutter pub get
         working-directory: ./
@@ -56,8 +56,8 @@ jobs:
        with:
          java-version: "12.x"
      - uses: subosito/flutter-action@v1
-       with:
-         channel: "stable"
+        with:
+          channel: "stable"
      - name: instalar depedencias
        run: flutter pub get
        working-directory: ./
