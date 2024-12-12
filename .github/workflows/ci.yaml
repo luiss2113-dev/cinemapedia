@@ -28,7 +28,7 @@ jobs:
   construir_ios:
     name: Build Flutter (IOS)
     needs: [ejecutar_pruebas]
-    run-on: macos-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
