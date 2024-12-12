@@ -18,13 +18,13 @@ jobs:
           channel: "stable"
       - name: instalar depedencias
         run: flutter pub get
-        working-directory: cinemapedia/
+        working-directory: ./
       - name: Analiza el código 
         run: flutter analize
-        working-directory: cinemapedia/
+        working-directory: ./
       - name: Ejecutar pruebas 
         run: flutter test
-        working-directory: cinemapedia/
+        working-directory: ./
   construir_ios:
     name: Build Flutter (IOS)
     needs: [ejecutar_pruebas]
@@ -39,13 +39,13 @@ jobs:
         channel: "stable"
       - name: instalar depedencias
         run: flutter pub get
-        working-directory: cinemapedia/
+        working-directory: ./
       - name: Limpiar proyecto
         run: flutter clean
-        working-directory: cinemapedia/
+        working-directory: ./
       - name: Construir aplicación
         run: flutter build ios --release --no-codesing
-        working-directory: cinemapedia/
+        working-directory: ./
   construir_appbundle:
     name: Build Flutter (Android)
     needs: [ejecutar_pruebas]
@@ -60,7 +60,7 @@ jobs:
          channel: "stable"
      - name: instalar depedencias
        run: flutter pub get
-       working-directory: cinemapedia/
+       working-directory: ./
      - name: Construir aplicación 🚀
        run: flutter build appbundle
        working-directory: app_devops/
