@@ -20,7 +20,7 @@ jobs:
         run: flutter pub get
         working-directory: ./
       - name: Analiza el código 
-        run: flutter analize
+        run: flutter analyze
         working-directory: ./
       - name: Ejecutar pruebas 
         run: flutter test
