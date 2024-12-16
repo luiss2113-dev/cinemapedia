@@ -30,11 +30,11 @@ jobs:
     needs: [ejecutar_pruebas]
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: actions/setup-java@v1
         with:
           java-version: "17.x"
-      - uses: actions/flutter-action@v1
+      - uses: actions/flutter-action@v2
         with:
           channel: "stable"
       - name: instalar depedencias
