@@ -62,5 +62,5 @@ jobs:
         run: flutter pub get
         working-directory: ./
       - name: Construir aplicación 🚀
-        run: flutter build appbundle --no-codesign --dart-define=THE_MOVIEDB_KEY=6b181b8b56ac841918f407b76f35dbdb
+        run: flutter build ios --release --no-codesign --dart-define=THE_MOVIEDB_KEY=6b181b8b56ac841918f407b76f35dbdb
         working-directory: ./
